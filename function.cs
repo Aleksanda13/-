@@ -1,28 +1,41 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Укажите вашу дату рождения");
-string date = Console.ReadLine();
-string[] subs = date.Split('.');
-int day = int.Parse(subs[0]);
-int month = int.Parse(subs[1]);
-
-Console.WriteLine($"Ваш знак зодиака: {zodiac(day,month)}");
-
-static string zodiac(int day, int month)
+using System;
+using System.IO;
+Console.WriteLine("Введите значение нижнего предела: ");
+double a = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите значение верхнего предела: ");
+double b = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите количество разбиений интеграла: ");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n <= 0)
 {
-   switch(month)
+    return;
+}
+
+
+double result = Calc(a, b, n);
+Console.WriteLine($"Значение интеграла: {result:f5} ");
+
+string path = Path.Combine(Directory.GetCurrentDirectory(),"result.txt");
+using (StreamWriter writer = new StreamWriter(path))
+{
+    writer.WriteLine($"Значение интеграла: {result:f5}, на отрезке [{a},{b}] с {n} разбиениями");
+}
+Console.WriteLine($"Результат вычислений сохранени в файл {path}");
+
+static double function(double x)
+{
+    return 2 * x * x + 3 * x;
+}
+static double Calc(double a, double b, int n)
+{
+    double h = (b - a) / n;
+
+    double sum = 0.0;
+
+    for (int i = 1; i <= n; i++)
     {
-        case 1: return (day > 20) ? "Водолей" : "Козерог";
-        case 2: return (day > 20) ? "Рыбы" : "Водолей";
-        case 3: return (day > 20) ? "Овен" : "Водолей";
-        case 4: return (day > 20) ? "Телец" : "Овен";
-        case 5: return (day > 20) ? "Близнецы" : "Телец";
-        case 6: return (day > 21) ? "Рак" : "Близнецы";
-        case 7: return (day > 22) ? "Лев" : "Рак";
-        case 8: return (day > 23) ? "Дева" : "Лев";
-        case 9: return (day > 23) ? "Весы" : "Дева";
-        case 10: return (day > 23) ? "Скорпион" : "Весы";
-        case 11: return (day > 22) ? "Стрелец" : "Скорпион";
-        case 12: return (day > 21) ? "Козерог" : "Стрелец";
-        default: return "выйди и зайди обратно";
+        double x = a + i * h - h / 2;
+        sum += function(x);
     }
+    return h * sum;
 }
