@@ -15,27 +15,39 @@ if (n <= 0)
 double result = Calc(a, b, n);
 Console.WriteLine($"Значение интеграла: {result:f5} ");
 
-string path = Path.Combine(Directory.GetCurrentDirectory(),"result.txt");
-using (StreamWriter writer = new StreamWriter(path))
-{
-    writer.WriteLine($"Значение интеграла: {result:f5}, на отрезке [{a},{b}] с {n} разбиениями");
-}
-Console.WriteLine($"Результат вычислений сохранени в файл {path}");
+string path = Path.Combine(Directory.GetCurrentDirectory(),"result.txt");Console.WriteLine("Введите начало отрезка (а): ");
+double start = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите конец отрезка (b): ");
+double end = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите шаг: ");
+double h = Convert.ToDouble(Console.ReadLine());
+int point = 0;
+double PredY = double.NaN;
+int change = 0;
 
-static double function(double x)
-{
-    return 2 * x * x + 3 * x;
-}
-static double Calc(double a, double b, int n)
-{
-    double h = (b - a) / n;
+double maxY = double.MinValue;
+double minY = double.MaxValue;
 
-    double sum = 0.0;
+Console.WriteLine("n/ Таблица значений функции y(x) = cos(x^2)+sin^2(x)");
+Console.WriteLine("----------------------------------------------------");
+Console.WriteLine("     x    | |    x(y)     ");
+for (double x = start; x <= end; x += h)
+{
+    double y = Math.Cos(x * x) + Math.Pow(Math.Sin(x), 2);
+    Console.WriteLine($"|{x,9:F2}| |{y,9:F4}|");
+    point += 1;
+    if (y > maxY)
+    { maxY = y; }
 
-    for (int i = 1; i <= n; i++)
-    {
-        double x = a + i * h - h / 2;
-        sum += function(x);
-    }
-    return h * sum;
+    if (y < minY)
+    { minY = y;}
+
+    if ((PredY < 0 && y >= 0) || (PredY >= 0 && y < 0))
+     {change++;}
+
+    PredY = y;
 }
+Console.WriteLine("----------------------------------------------------");
+Console.WriteLine("Количество точек:" + point);
+Console.WriteLine($"Максимальное и минимальное значение функции: {maxY}, {minY}");
+Console.WriteLine("Количество пересечений с осью X:" + change);
