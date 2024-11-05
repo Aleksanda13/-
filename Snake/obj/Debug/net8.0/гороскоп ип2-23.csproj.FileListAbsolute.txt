@@ -1,0 +1,14 @@
+C:\Users\prdb\source\repos\гороскоп ип2-23\bin\Debug\net8.0\гороскоп ип2-23.exe
+C:\Users\prdb\source\repos\гороскоп ип2-23\bin\Debug\net8.0\гороскоп ип2-23.deps.json
+C:\Users\prdb\source\repos\гороскоп ип2-23\bin\Debug\net8.0\гороскоп ип2-23.runtimeconfig.json
+C:\Users\prdb\source\repos\гороскоп ип2-23\bin\Debug\net8.0\гороскоп ип2-23.dll
+C:\Users\prdb\source\repos\гороскоп ип2-23\bin\Debug\net8.0\гороскоп ип2-23.pdb
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\гороскоп ип2-23.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\гороскоп ип2-23.AssemblyInfoInputs.cache
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\гороскоп ип2-23.AssemblyInfo.cs
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\гороскоп ип2-23.csproj.CoreCompileInputs.cache
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\гороскоп ип2-23.dll
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\refint\гороскоп ип2-23.dll
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\гороскоп ип2-23.pdb
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\гороскоп ип2-23.genruntimeconfig.cache
+C:\Users\prdb\source\repos\гороскоп ип2-23\obj\Debug\net8.0\ref\гороскоп ип2-23.dll
