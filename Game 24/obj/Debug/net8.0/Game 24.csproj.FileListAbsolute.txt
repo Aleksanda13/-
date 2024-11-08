@@ -1,0 +1,14 @@
+C:\Users\prdb\source\repos\Game 24\bin\Debug\net8.0\Game 24.exe
+C:\Users\prdb\source\repos\Game 24\bin\Debug\net8.0\Game 24.deps.json
+C:\Users\prdb\source\repos\Game 24\bin\Debug\net8.0\Game 24.runtimeconfig.json
+C:\Users\prdb\source\repos\Game 24\bin\Debug\net8.0\Game 24.dll
+C:\Users\prdb\source\repos\Game 24\bin\Debug\net8.0\Game 24.pdb
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\Game 24.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\Game 24.AssemblyInfoInputs.cache
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\Game 24.AssemblyInfo.cs
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\Game 24.csproj.CoreCompileInputs.cache
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\Game 24.dll
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\refint\Game 24.dll
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\Game 24.pdb
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\Game 24.genruntimeconfig.cache
+C:\Users\prdb\source\repos\Game 24\obj\Debug\net8.0\ref\Game 24.dll
